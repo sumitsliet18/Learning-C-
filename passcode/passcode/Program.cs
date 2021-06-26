@@ -14,18 +14,14 @@ namespace passcode
                 Console.WriteLine("What is the passcode?");
                 code = Console.ReadLine();
 
-                if (code == "secret")
-                {
-                Console.WriteLine("Authenticted");
-
-                }
-                else if (code != "secret")
+                if (code != "secret")
                 {
                 Console.WriteLine("Not Authenticted");
                 }
              
                 
             }
+            Console.WriteLine("Authenticted");
 
         }
     }
