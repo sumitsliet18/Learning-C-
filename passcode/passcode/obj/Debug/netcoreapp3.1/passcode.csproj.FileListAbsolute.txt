@@ -1,0 +1,13 @@
+C:\Users\sumit\Desktop\Learning-C-\passcode\passcode\bin\Debug\netcoreapp3.1\passcode.exe
+C:\Users\sumit\Desktop\Learning-C-\passcode\passcode\bin\Debug\netcoreapp3.1\passcode.deps.json
+C:\Users\sumit\Desktop\Learning-C-\passcode\passcode\bin\Debug\netcoreapp3.1\passcode.runtimeconfig.json
+C:\Users\sumit\Desktop\Learning-C-\passcode\passcode\bin\Debug\netcoreapp3.1\passcode.runtimeconfig.dev.json
+C:\Users\sumit\Desktop\Learning-C-\passcode\passcode\bin\Debug\netcoreapp3.1\passcode.dll
+C:\Users\sumit\Desktop\Learning-C-\passcode\passcode\bin\Debug\netcoreapp3.1\passcode.pdb
+C:\Users\sumit\Desktop\Learning-C-\passcode\passcode\obj\Debug\netcoreapp3.1\passcode.csproj.AssemblyReference.cache
+C:\Users\sumit\Desktop\Learning-C-\passcode\passcode\obj\Debug\netcoreapp3.1\passcode.AssemblyInfoInputs.cache
+C:\Users\sumit\Desktop\Learning-C-\passcode\passcode\obj\Debug\netcoreapp3.1\passcode.AssemblyInfo.cs
+C:\Users\sumit\Desktop\Learning-C-\passcode\passcode\obj\Debug\netcoreapp3.1\passcode.csproj.CoreCompileInputs.cache
+C:\Users\sumit\Desktop\Learning-C-\passcode\passcode\obj\Debug\netcoreapp3.1\passcode.dll
+C:\Users\sumit\Desktop\Learning-C-\passcode\passcode\obj\Debug\netcoreapp3.1\passcode.pdb
+C:\Users\sumit\Desktop\Learning-C-\passcode\passcode\obj\Debug\netcoreapp3.1\passcode.genruntimeconfig.cache
