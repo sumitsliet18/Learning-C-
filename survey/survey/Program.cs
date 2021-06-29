@@ -11,7 +11,7 @@ namespace survey
 
             if (name == "")
             {
-                Console.WriteLine("You did not write anything, please try again");
+                WriteTryAgain();
                 name = Console.ReadLine();
             }
 
@@ -20,7 +20,7 @@ namespace survey
 
             if (age == "")
             {
-                Console.WriteLine("You did not write anything, please try again");
+                WriteTryAgain();
                 age = Console.ReadLine();
             }
 
@@ -29,7 +29,7 @@ namespace survey
 
             if (month == "")
             {
-                Console.WriteLine("You did not write anything, please try again");
+                WriteTryAgain();
                 month = Console.ReadLine();
             }
 
@@ -50,6 +50,11 @@ namespace survey
                 Console.WriteLine("you are a Gemini");
             }
 
+        }
+        
+        static void WriteTryAgain()
+        {
+            Console.WriteLine("You did not type anything, please try again");
         }
     }
 }
