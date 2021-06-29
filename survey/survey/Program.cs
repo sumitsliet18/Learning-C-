@@ -7,31 +7,13 @@ namespace survey
         static void Main(string[] args)
         {
             Console.WriteLine("What is your name?");
-            var name = Console.ReadLine();
-
-            if (name == "")
-            {
-                
-                name = TryAgain();
-            }
+            var name = TryAnswer();
 
             Console.WriteLine("What is your age?");
-            var age = Console.ReadLine();
-
-            if (age == "")
-            {
-                
-                age = TryAgain();
-            }
+            var age = TryAnswer();
 
             Console.WriteLine("What month were you born?");
-            var month = Console.ReadLine();
-
-            if (month == "")
-            {
-               
-                month = TryAgain();
-            }
+            var month = TryAnswer();
 
             Console.WriteLine("Your name is: {0}", name);
             Console.WriteLine("Your age is: {0}", age);
@@ -52,10 +34,15 @@ namespace survey
 
         }
         
-        static string TryAgain()
+        static string TryAnswer()
         {
-            Console.WriteLine("You did not type anything, please try again");
-            return Console.ReadLine();
+            var answer = Console.ReadLine();
+            if (answer == "")
+            {
+                Console.WriteLine("You did not type anything, please try again");
+                return Console.ReadLine();
+            }
+            return answer;
         }
     }
 }
