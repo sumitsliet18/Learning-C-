@@ -28,7 +28,7 @@ namespace SchoolTracker1
                 newStudent.Address = Console.ReadLine();
 
                 Console.WriteLine("Student phone number:");
-                newStudent.setPhone(int.Parse(Console.ReadLine()));
+                newStudent.Phone = int.Parse(Console.ReadLine());
 
                 students.Add(newStudent);
 
@@ -52,8 +52,12 @@ namespace SchoolTracker1
         public string Birthday;
         public string Address;
         private int phone;
+        public int Phone
+        {
+            set { phone = value; Console.WriteLine(phone); } 
+        }
 
-        public void setPhone(int number)
+        public void SetPhone(int number)
         {
             phone = number;
         }
