@@ -11,8 +11,8 @@ namespace survey
 
             if (name == "")
             {
-                WriteTryAgain();
-                name = Console.ReadLine();
+                
+                name = TryAgain();
             }
 
             Console.WriteLine("What is your age?");
@@ -20,8 +20,8 @@ namespace survey
 
             if (age == "")
             {
-                WriteTryAgain();
-                age = Console.ReadLine();
+                
+                age = TryAgain();
             }
 
             Console.WriteLine("What month were you born?");
@@ -29,8 +29,8 @@ namespace survey
 
             if (month == "")
             {
-                WriteTryAgain();
-                month = Console.ReadLine();
+               
+                month = TryAgain();
             }
 
             Console.WriteLine("Your name is: {0}", name);
@@ -52,9 +52,10 @@ namespace survey
 
         }
         
-        static void WriteTryAgain()
+        static string TryAgain()
         {
             Console.WriteLine("You did not type anything, please try again");
+            return Console.ReadLine();
         }
     }
 }
