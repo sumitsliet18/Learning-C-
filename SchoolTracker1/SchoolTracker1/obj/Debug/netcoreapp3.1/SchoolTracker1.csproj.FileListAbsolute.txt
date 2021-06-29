@@ -1,0 +1,13 @@
+C:\Users\sumit\Desktop\Learning-C-sharp\SchoolTracker1\SchoolTracker1\bin\Debug\netcoreapp3.1\SchoolTracker1.exe
+C:\Users\sumit\Desktop\Learning-C-sharp\SchoolTracker1\SchoolTracker1\bin\Debug\netcoreapp3.1\SchoolTracker1.deps.json
+C:\Users\sumit\Desktop\Learning-C-sharp\SchoolTracker1\SchoolTracker1\bin\Debug\netcoreapp3.1\SchoolTracker1.runtimeconfig.json
+C:\Users\sumit\Desktop\Learning-C-sharp\SchoolTracker1\SchoolTracker1\bin\Debug\netcoreapp3.1\SchoolTracker1.runtimeconfig.dev.json
+C:\Users\sumit\Desktop\Learning-C-sharp\SchoolTracker1\SchoolTracker1\bin\Debug\netcoreapp3.1\SchoolTracker1.dll
+C:\Users\sumit\Desktop\Learning-C-sharp\SchoolTracker1\SchoolTracker1\bin\Debug\netcoreapp3.1\SchoolTracker1.pdb
+C:\Users\sumit\Desktop\Learning-C-sharp\SchoolTracker1\SchoolTracker1\obj\Debug\netcoreapp3.1\SchoolTracker1.csproj.AssemblyReference.cache
+C:\Users\sumit\Desktop\Learning-C-sharp\SchoolTracker1\SchoolTracker1\obj\Debug\netcoreapp3.1\SchoolTracker1.AssemblyInfoInputs.cache
+C:\Users\sumit\Desktop\Learning-C-sharp\SchoolTracker1\SchoolTracker1\obj\Debug\netcoreapp3.1\SchoolTracker1.AssemblyInfo.cs
+C:\Users\sumit\Desktop\Learning-C-sharp\SchoolTracker1\SchoolTracker1\obj\Debug\netcoreapp3.1\SchoolTracker1.csproj.CoreCompileInputs.cache
+C:\Users\sumit\Desktop\Learning-C-sharp\SchoolTracker1\SchoolTracker1\obj\Debug\netcoreapp3.1\SchoolTracker1.dll
+C:\Users\sumit\Desktop\Learning-C-sharp\SchoolTracker1\SchoolTracker1\obj\Debug\netcoreapp3.1\SchoolTracker1.pdb
+C:\Users\sumit\Desktop\Learning-C-sharp\SchoolTracker1\SchoolTracker1\obj\Debug\netcoreapp3.1\SchoolTracker1.genruntimeconfig.cache
