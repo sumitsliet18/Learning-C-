@@ -1,6 +1,5 @@
 ﻿using System;
 using System.Collections.Generic;
-
 namespace SchoolTracker1
 {
     class Program
@@ -15,30 +14,22 @@ namespace SchoolTracker1
             }
             {
                 var students = new List<Student>();
-
                 var adding = true;
                 while (adding)
                 {
                     var newStudent = new Student();
-
                     newStudent.Name = Util.Console.Ask("Student name:");
-
                     Console.WriteLine("Student grade:");
                     newStudent.Grade = int.Parse(Util.Console.Ask("Student grade:"));
-
                     Console.WriteLine("Student Birthday:");
                     newStudent.Birthday = Util.Console.Ask("Student Birthday:");
-
                     Console.WriteLine("Student address:");
                     newStudent.Address = Util.Console.Ask("Student address:");
-
                     Console.WriteLine("Student phone number:");
                     newStudent.Phone = int.Parse(Util.Console.Ask("Student name:"));
-
                     students.Add(newStudent);
                     Student.Count++;
                     Console.WriteLine("Student count: {0}", Student.Count);
-
                     Console.WriteLine("Add another?: y/n");
                     if (Console.ReadLine() != "y")
                     {
@@ -49,24 +40,29 @@ namespace SchoolTracker1
                 {
                     Console.WriteLine("Name: {0}, Grade: {1}", student.Name, student.Grade);
                 }
-
             }
         }
-        class Student
+        class Member
         {
-            static public int Count;
-
+            public string Name;
+            public string Address;
+            protected int phone;
+            public int Phone
+            {
+                set { phone = value; }
+            }
+        }
+        class Student : Member
+        {
+            static public int Count = 0;
             public string Name;
             public int Grade;
             public string Birthday;
             public string Address;
             private int phone;
-
             public Student()
             {
-
             }
-
             public Student(string name, int grade, string birthday, string address, int phone)
             {
                 Name = name;
@@ -75,17 +71,10 @@ namespace SchoolTracker1
                 Address = address;
                 Phone = phone;
             }
-
-            public int Phone
-            {
-                set { phone = value; }
-            }
-
-            public void SetPhone(int number)
-            {
-                phone = number;
-            }
         }
-
+        class Teacher : Member
+        {
+            public string Subject;
+        }
     }
 }
