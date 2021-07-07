@@ -17,28 +17,41 @@ namespace SchoolTracker1
                 var adding = true;
                 while (adding)
                 {
-                    var newStudent = new Student();
-                    newStudent.Name = Util.Console.Ask("Student name:");
-                    Console.WriteLine("Student grade:");
-                    var results = int.TryParse(Util.Console.Ask("Student grade:"), out newStudent.Grade);
-                    if (!results)
+                    try
                     {
-                        Console.WriteLine("Error, please enter a number");
+                        var newStudent = new Student();
+                        newStudent.Name = Util.Console.Ask("Student name:");
+                        
+                        Console.WriteLine("Student grade:");
+                        newStudent.Grade = int.Parse(Util.Console.Ask("Student grade:"));
+                        
+                        Console.WriteLine("Student Birthday:");
+                        newStudent.Birthday = Util.Console.Ask("Student Birthday:");
+                        Console.WriteLine("Student address:");
+                        newStudent.Address = Util.Console.Ask("Student address:");
+                        Console.WriteLine("Student phone number:");
+                        newStudent.Phone = int.Parse(Util.Console.Ask("Student name:"));
+                        students.Add(newStudent);
+                        Student.Count++;
+                        Console.WriteLine("Student count: {0}", Student.Count);
+                        Console.WriteLine("Add another?: y/n");
+                        if (Console.ReadLine() != "y")
+                        {
+                            adding = false;
+                        }
                     }
-                    Console.WriteLine("Student Birthday:");
-                    newStudent.Birthday = Util.Console.Ask("Student Birthday:");
-                    Console.WriteLine("Student address:");
-                    newStudent.Address = Util.Console.Ask("Student address:");
-                    Console.WriteLine("Student phone number:");
-                    newStudent.Phone = int.Parse(Util.Console.Ask("Student name:"));
-                    students.Add(newStudent);
-                    Student.Count++;
-                    Console.WriteLine("Student count: {0}", Student.Count);
-                    Console.WriteLine("Add another?: y/n");
-                    if (Console.ReadLine() != "y")
+                    catch (FormatException)
                     {
-                        adding = false;
+                        Console.WriteLine("Input was not a number");
                     }
+
+                    catch (Exception)
+                    {
+
+                        Console.WriteLine("Error adding student, please try again");
+                    }
+
+                    
                 }
                 foreach (var student in students)
                 {
