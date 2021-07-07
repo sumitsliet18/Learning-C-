@@ -20,7 +20,11 @@ namespace SchoolTracker1
                     var newStudent = new Student();
                     newStudent.Name = Util.Console.Ask("Student name:");
                     Console.WriteLine("Student grade:");
-                    newStudent.Grade = int.Parse(Util.Console.Ask("Student grade:"));
+                    var results = int.TryParse(Util.Console.Ask("Student grade:"), out newStudent.Grade);
+                    if (!results)
+                    {
+                        Console.WriteLine("Error, please enter a number");
+                    }
                     Console.WriteLine("Student Birthday:");
                     newStudent.Birthday = Util.Console.Ask("Student Birthday:");
                     Console.WriteLine("Student address:");
