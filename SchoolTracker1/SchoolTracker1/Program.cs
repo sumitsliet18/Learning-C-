@@ -51,7 +51,7 @@ namespace SchoolTracker1
                         Console.WriteLine("Error adding student, please try again");
                     }
 
-                    
+
                 }
                 foreach (var student in students)
                 {
