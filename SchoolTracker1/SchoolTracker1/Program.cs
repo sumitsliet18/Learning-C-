@@ -25,6 +25,8 @@ namespace SchoolTracker1
                         Console.WriteLine("Student grade:");
                         newStudent.Grade = Util.Console.AskInt("Student grade:");
 
+                        newStudent.School = Util.Console.Ask("School Name:");
+
                         Console.WriteLine("Student Birthday:");
                         newStudent.Birthday = Util.Console.Ask("Student Birthday:");
                         Console.WriteLine("Student address:");
@@ -75,6 +77,7 @@ namespace SchoolTracker1
             public string Name;
             public int Grade;
             public string Birthday;
+            public string School;
             public string Address;
             private int phone;
             public Student()
